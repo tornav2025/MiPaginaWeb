@@ -1,0 +1,4 @@
+MiPaginaWeb/
+├── index.html
+├── acerca.html
+└── foto.jpg
