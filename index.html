@@ -2,59 +2,113 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi primera página</title>
+  <title>México en la COI-UNESCO</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f8ff;
       text-align: center;
-      padding: 50px;
+      padding: 30px;
     }
     h1 {
       color: #003366;
+      font-size: 28px;
     }
-    p {
-      font-size: 18px;
-      color: #333;
+    h2 {
+      color: #005599;
+      margin-top: 50px;
     }
-    img {
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 95%;
     }
-    button {
-      padding: 10px 20px;
-      background-color: #0066cc;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 20px;
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
     }
-    button:hover {
-      background-color: #004999;
+    th {
+      background-color: #b3d9ff;
     }
-    a {
-      display: block;
-      margin-top: 30px;
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: bold;
+    td {
+      background-color: #eef7ff;
     }
-    a:hover {
-      text-decoration: underline;
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>¡Hola, mundo!</h1>
-  
-  <img src="foto.jpg" alt="Mi imagen" width="300">
+  <h1>MÉXICO EN LA COMISIÓN OCEANOGRÁFICA INTERGUBERNAMENTAL DE LA UNESCO</h1>
 
-  <p>Esta es mi primera página web hecha desde mi laptop.</p>
+  <section id="programas">
+    <h2>Programas de la COI-UNESCO en México</h2>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Programa</th>
+            <th>Descripción</th>
+            <th>Puntos Focales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🌊 Decenio de las Ciencias Oceánicas (2021–2030)</td>
+            <td>Iniciativa global para generar conocimiento y soluciones oceánicas en apoyo a los ODS. Incluye Cultura Oceánica y el Observatorio Global del Océano.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>📡 IODE</td>
+            <td>Facilita el acceso, gestión e intercambio de datos oceanográficos. Proyectos clave: <strong>ODIS</strong> y <strong>OceanTeacher Global Academy (OTGA)</strong>.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>🌐 GOOS</td>
+            <td>Red global que monitorea el océano en tiempo real y a largo plazo. Incluye el <strong>GOOS Biology and Ecosystems Panel</strong> y el <strong>Coastal GOOS</strong>.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>🌊 Programa de Tsunamis y Otros Peligros Costeros</td>
+            <td>Coordina sistemas de alerta temprana en el Pacífico (PTWS), Índico (IOTWMS), Caribe (CARIBE-EWS) y Atlántico NE/Mediterráneo (NEAMTWS).</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>📈 GLOSS</td>
+            <td>Red de mareógrafos para medir el nivel del mar, apoyando estudios sobre cambio climático y variabilidad del nivel del mar.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>📚 Cultura Oceánica</td>
+            <td>Fomenta la educación y concienciación sobre la importancia del océano en la vida cotidiana, en colaboración con escuelas y comunidades.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>🧑‍🏫 Desarrollo de Capacidades</td>
+            <td>Iniciativas como <strong>OceanTeacher Global Academy (OTGA)</strong> para formación en temas marinos y apoyo a países en desarrollo.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>📍 Gestión Espacial Marina (MSP)</td>
+            <td>Herramienta para planificación y uso sostenible del océano, evitando conflictos y maximizando beneficios ambientales y económicos.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>🌿 FANs – Floraciones de Algas Nocivas</td>
+            <td>Programa dedicado a la investigación, monitoreo y gestión de floraciones de algas nocivas. Coordina redes <strong>GEOHAB</strong> y <strong>GlobalHAB</strong>.</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-  <button onclick="alert('¡Gracias por hacer clic!')">Haz clic aquí</button>
-
-  <a href="acerca.html">Ir a Acerca de</a>
+  <footer>
+    Sitio de muestra desarrollado por Carlos R. Torres Navarrete · COI-UNESCO México
+  </footer>
 </body>
 </html>
