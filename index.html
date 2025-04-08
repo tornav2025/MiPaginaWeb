@@ -14,31 +14,55 @@
       color: #003366;
       font-size: 28px;
     }
-    h2 {
-      color: #005599;
-      margin-top: 50px;
-    }
-    table {
-      margin: 20px auto;
-      border-collapse: collapse;
-      width: 95%;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
-      vertical-align: top;
-    }
-    th {
+    .accordion {
       background-color: #b3d9ff;
+      color: #003366;
+      cursor: pointer;
+      padding: 15px;
+      margin: 10px auto;
+      width: 90%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      transition: 0.4s;
+      border-radius: 5px;
     }
-    td {
+    .active, .accordion:hover {
+      background-color: #99ccff;
+    }
+    .panel {
+      padding: 0 20px;
+      display: none;
       background-color: #eef7ff;
+      overflow: hidden;
+      width: 90%;
+      margin: 0 auto 10px;
+      text-align: left;
+      border-radius: 5px;
     }
-    footer {
-      margin-top: 40px;
+    .sub-button {
+      display: inline-block;
+      background-color: #cce5ff;
+      color: #003366;
+      padding: 10px 20px;
+      margin: 10px 10px 0 0;
+      border: none;
+      border-radius: 5px;
       font-size: 14px;
-      color: #666;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .sub-button:hover {
+      background-color: #aad4ff;
+    }
+    .sub-panel {
+      display: none;
+      margin-top: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #003366;
     }
   </style>
 </head>
@@ -47,68 +71,117 @@
 
   <section id="programas">
     <h2>Programas de la COI-UNESCO en México</h2>
-    <div style="overflow-x:auto;">
-      <table>
-        <thead>
-          <tr>
-            <th>Programa</th>
-            <th>Descripción</th>
-            <th>Puntos Focales</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>🌊 Decenio de las Ciencias Oceánicas (2021–2030)</td>
-            <td>Iniciativa global para generar conocimiento y soluciones oceánicas en apoyo a los ODS. Incluye Cultura Oceánica y el Observatorio Global del Océano.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>📡 IODE</td>
-            <td>Facilita el acceso, gestión e intercambio de datos oceanográficos. Proyectos clave: <strong>ODIS</strong> y <strong>OceanTeacher Global Academy (OTGA)</strong>.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>🌐 GOOS</td>
-            <td>Red global que monitorea el océano en tiempo real y a largo plazo. Incluye el <strong>GOOS Biology and Ecosystems Panel</strong> y el <strong>Coastal GOOS</strong>.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>🌊 Programa de Tsunamis y Otros Peligros Costeros</td>
-            <td>Coordina sistemas de alerta temprana en el Pacífico (PTWS), Índico (IOTWMS), Caribe (CARIBE-EWS) y Atlántico NE/Mediterráneo (NEAMTWS).</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>📈 GLOSS</td>
-            <td>Red de mareógrafos para medir el nivel del mar, apoyando estudios sobre cambio climático y variabilidad del nivel del mar.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>📚 Cultura Oceánica</td>
-            <td>Fomenta la educación y concienciación sobre la importancia del océano en la vida cotidiana, en colaboración con escuelas y comunidades.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>🧑‍🏫 Desarrollo de Capacidades</td>
-            <td>Iniciativas como <strong>OceanTeacher Global Academy (OTGA)</strong> para formación en temas marinos y apoyo a países en desarrollo.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>📍 Gestión Espacial Marina (MSP)</td>
-            <td>Herramienta para planificación y uso sostenible del océano, evitando conflictos y maximizando beneficios ambientales y económicos.</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>🌿 FANs – Floraciones de Algas Nocivas</td>
-            <td>Programa dedicado a la investigación, monitoreo y gestión de floraciones de algas nocivas. Coordina redes <strong>GEOHAB</strong> y <strong>GlobalHAB</strong>.</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+
+    <button class="accordion">🌊 Decenio de las Ciencias Oceánicas (2021–2030)</button>
+    <div class="panel">
+      <p>Iniciativa global para generar conocimiento y soluciones oceánicas en apoyo a los ODS. Incluye Cultura Oceánica y el Observatorio Global del Océano.</p>
+      <button class="sub-button" onclick="toggleSubPanel('paem')">📘 PAEM</button>
+      <div id="paem" class="sub-panel">
+        <button class="sub-button"><a href="#">📄 Documento PAEM</a></button>
+        <button class="sub-button"><a href="#">🔄 Actualizaciones</a></button>
+        <button class="sub-button"><a href="#">📊 Indicadores</a></button>
+      </div>
+
+      <button class="sub-button" onclick="toggleSubPanel('comites')">🏛️ Comités Estatales</button>
+      <div id="comites" class="sub-panel">
+        <button class="sub-button"><a href="#">Baja California</a></button>
+        <button class="sub-button"><a href="#">Baja California Sur</a></button>
+        <button class="sub-button"><a href="#">Campeche</a></button>
+        <button class="sub-button"><a href="#">Chiapas</a></button>
+        <button class="sub-button"><a href="#">Colima</a></button>
+        <button class="sub-button"><a href="#">Guerrero</a></button>
+        <button class="sub-button"><a href="#">Jalisco</a></button>
+        <button class="sub-button"><a href="#">Michoacán</a></button>
+        <button class="sub-button"><a href="#">Nayarit</a></button>
+        <button class="sub-button"><a href="#">Oaxaca</a></button>
+        <button class="sub-button"><a href="#">Quintana Roo</a></button>
+        <button class="sub-button"><a href="#">Sinaloa</a></button>
+        <button class="sub-button"><a href="#">Sonora</a></button>
+        <button class="sub-button"><a href="#">Tabasco</a></button>
+        <button class="sub-button"><a href="#">Tamaulipas</a></button>
+        <button class="sub-button"><a href="#">Veracruz</a></button>
+        <button class="sub-button"><a href="#">Yucatán</a></button>
+      </div>
+
+      <button class="sub-button" onclick="toggleSubPanel('resultados')">📊 Resultados del Decenio</button>
+      <div id="resultados" class="sub-panel">
+        <button class="sub-button"><a href="#">Resultado 1</a></button>
+        <button class="sub-button"><a href="#">Resultado 2</a></button>
+        <button class="sub-button"><a href="#">Resultado 3</a></button>
+        <button class="sub-button"><a href="#">Resultado 4</a></button>
+        <button class="sub-button"><a href="#">Resultado 5</a></button>
+        <button class="sub-button"><a href="#">Resultado 6</a></button>
+        <button class="sub-button"><a href="#">Resultado 7</a></button>
+      </div>
+    </div>
+
+    <button class="accordion">📡 IODE</button>
+    <div class="panel">
+      <p>Facilita el acceso, gestión e intercambio de datos oceanográficos. Más información en <a href="https://www.iode.org" target="_blank">IODE.org</a>.</p>
+    </div>
+
+    <button class="accordion">🌐 GOOS</button>
+    <div class="panel">
+      <p>Red global que monitorea el océano. Consulta más en <a href="https://www.goosocean.org" target="_blank">goosocean.org</a>.</p>
+    </div>
+
+    <button class="accordion">🌊 Programa de Tsunamis y Otros Peligros Costeros</button>
+    <div class="panel">
+      <p>Coordina sistemas de alerta temprana. Información disponible en <a href="https://www.ioc-tsunami.org" target="_blank">ioc-tsunami.org</a>.</p>
+    </div>
+
+    <button class="accordion">📈 GLOSS</button>
+    <div class="panel">
+      <p>Red global de mareógrafos. Más información en <a href="https://www.gloss-sealevel.org" target="_blank">gloss-sealevel.org</a>.</p>
+    </div>
+
+    <button class="accordion">📚 Cultura Oceánica</button>
+    <div class="panel">
+      <p>Iniciativa educativa sobre el océano. Más en <a href="https://oceanliteracy.unesco.org" target="_blank">oceanliteracy.unesco.org</a>.</p>
+    </div>
+
+    <button class="accordion">🧑‍🏫 Desarrollo de Capacidades</button>
+    <div class="panel">
+      <p>Programas de formación como OTGA. Más información en <a href="https://oceanteacher.org" target="_blank">oceanteacher.org</a>.</p>
+    </div>
+
+    <button class="accordion">📍 Gestión Espacial Marina (MSP)</button>
+    <div class="panel">
+      <p>Planificación del uso sostenible del océano. Revisa <a href="https://msp.ioc-unesco.org" target="_blank">msp.ioc-unesco.org</a>.</p>
+    </div>
+
+    <button class="accordion">🌿 FANs – Floraciones de Algas Nocivas</button>
+    <div class="panel">
+      <p>Investigación y gestión de FANs. Información en <a href="https://globalhab.info" target="_blank">globalhab.info</a>.</p>
     </div>
   </section>
 
   <footer>
     Sitio de muestra desarrollado por Carlos R. Torres Navarrete · COI-UNESCO México
   </footer>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+
+    function toggleSubPanel(id) {
+      var sub = document.getElementById(id);
+      if (sub.style.display === "block") {
+        sub.style.display = "none";
+      } else {
+        sub.style.display = "block";
+      }
+    }
+  </script>
 </body>
 </html>
