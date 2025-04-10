@@ -89,43 +89,255 @@
         <button class="sub-button"><a href="#">📊 Indicadores</a></button>
       </div>
 
-      <button class="sub-button" onclick="toggleSubPanel('comites')">🏛️ Comités Estatales</button>
-      <div id="comites" class="sub-panel">
-        <button class="sub-button"><a href="#">Baja California</a></button>
-        <button class="sub-button"><a href="#">Baja California Sur</a></button>
-        <button class="sub-button"><a href="#">Campeche</a></button>
-        <button class="sub-button"><a href="#">Chiapas</a></button>
-        <button class="sub-button"><a href="#">Colima</a></button>
-        <button class="sub-button"><a href="#">Guerrero</a></button>
-        <button class="sub-button"><a href="#">Jalisco</a></button>
-        <button class="sub-button"><a href="#">Michoacán</a></button>
-        <button class="sub-button"><a href="#">Nayarit</a></button>
-        <button class="sub-button"><a href="#">Oaxaca</a></button>
-        <button class="sub-button"><a href="#">Quintana Roo</a></button>
-        <button class="sub-button"><a href="#">Sinaloa</a></button>
-        <button class="sub-button"><a href="#">Sonora</a></button>
-        <button class="sub-button"><a href="#">Tabasco</a></button>
-        <button class="sub-button"><a href="#">Tamaulipas</a></button>
-        <button class="sub-button"><a href="#">Veracruz</a></button>
-        <button class="sub-button"><a href="#">Yucatán</a></button>
-      </div>
+<button class="sub-button" onclick="toggleSubPanel('comites')">🏛️ Comités Estatales</button>
+<div id="comites" class="sub-panel">
+  <button class="sub-button" onclick="toggleMunicipios('municipiosBajaCalifornia')">Baja California</button>
+  <div id="municipiosBajaCalifornia" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Ensenada</button>
+<button class="municipio-button">Rosarito</button>
+<button class="municipio-button">Tijuana</button>
+<button class="municipio-button">Tecate</button>
+<button class="municipio-button">Playas de Rosarito</button>
+<button class="municipio-button">San Quintín</button>
+<button class="municipio-button">Puerto Nuevo</button>
+    </ul>
+  </div>
 
-      <button class="sub-button" onclick="toggleSubPanel('resultados')">📊 Resultados del Decenio</button>
+  <button class="sub-button" onclick="toggleMunicipios('municipiosBajaCaliforniaSur')">Baja California Sur</button>
+  <div id="municipiosBajaCaliforniaSur" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">La Paz</button>
+<button class="municipio-button">Los Cabos</button>
+<button class="municipio-button">Comondú</button>
+<button class="municipio-button">Loreto</button>
+<button class="municipio-button">Mulegé</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosCampeche')">Campeche</button>
+  <div id="municipiosCampeche" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Campeche</button>
+<button class="municipio-button">Carmen</button>
+<button class="municipio-button">Champotón</button>
+<button class="municipio-button">Escárcega</button>
+<button class="municipio-button">Calkiní</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosChiapas')">Chiapas</button>
+  <div id="municipiosChiapas" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Arriaga</button>
+<button class="municipio-button">Tonalá</button>
+<button class="municipio-button">Pijijiapan</button>
+<button class="municipio-button">Mapastepec</button>
+<button class="municipio-button">Acapetahua</button>
+<button class="municipio-button">Escuintla</button>
+<button class="municipio-button">Villa Comaltitlán</button>
+<button class="municipio-button">Huixtla</button>
+<button class="municipio-button">Mazatán</button>
+<button class="municipio-button">Tapachula</button>
+<button class="municipio-button">Suchiate</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosColima')">Colima</button>
+  <div id="municipiosColima" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Manzanillo</button>
+<button class="municipio-button">Colima</button>
+<button class="municipio-button">Tecomán</button>
+<button class="municipio-button">Armería</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosGuerrero')">Guerrero</button>
+  <div id="municipiosGuerrero" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Acapulco</button>
+<button class="municipio-button">Zihuatanejo</button>
+<button class="municipio-button">Chilpancingo</button>
+<button class="municipio-button">Petatlán</button>
+<button class="municipio-button">Atoyac de Álvarez</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosJalisco')">Jalisco</button>
+  <div id="municipiosJalisco" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Puerto Vallarta</button>
+<button class="municipio-button">Tomatlán</button>
+<button class="municipio-button">Cihuatlán</button>
+<button class="municipio-button">La Huerta</button>
+<button class="municipio-button">Mascota</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosMichoacan')">Michoacán</button>
+  <div id="municipiosMichoacan" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Lázaro Cárdenas</button>
+<button class="municipio-button">Aquila</button>
+<button class="municipio-button">Coahuayana</button>
+<button class="municipio-button">Arteaga</button>
+<button class="municipio-button">Tecpan de Galeana</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosNayarit')">Nayarit</button>
+  <div id="municipiosNayarit" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Tepic</button>
+<button class="municipio-button">Bahía de Banderas</button>
+<button class="municipio-button">San Blas</button>
+<button class="municipio-button">Santiago Ixcuintla</button>
+<button class="municipio-button">Acaponeta</button>
+<button class="municipio-button">Compostela</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosOaxaca')">Oaxaca</button>
+  <div id="municipiosOaxaca" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Salina Cruz</button>
+<button class="municipio-button">Puerto Escondido</button>
+<button class="municipio-button">Huatulco</button>
+<button class="municipio-button">Juchitán</button>
+<button class="municipio-button">San Pedro Pochutla</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosQuintanaRoo')">Quintana Roo</button>
+  <div id="municipiosQuintanaRoo" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Cancún</button>
+<button class="municipio-button">Playa del Carmen</button>
+<button class="municipio-button">Cozumel</button>
+<button class="municipio-button">Isla Mujeres</button>
+<button class="municipio-button">Chetumal</button>
+<button class="municipio-button">Progreso</button>
+<button class="municipio-button">Telchac</button>
+<button class="municipio-button">Sisal</button>
+<button class="municipio-button">Mérida</button>
+<button class="municipio-button">Conkal</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosSinaloa')">Sinaloa</button>
+  <div id="municipiosSinaloa" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Mazatlán</button>
+<button class="municipio-button">Escuinapa</button>
+<button class="municipio-button">Navolato</button>
+<button class="municipio-button">Elota</button>
+<button class="municipio-button">Cosalá</button>
+<button class="municipio-button">Salvador Alvarado</button>
+<button class="municipio-button">San Ignacio</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosSonora')">Sonora</button>
+  <div id="municipiosSonora" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Guaymas</button>
+<button class="municipio-button">Empalme</button>
+<button class="municipio-button">Hermosillo</button>
+<button class="municipio-button">Caborca</button>
+<button class="municipio-button">Puerto Peñasco</button>
+<button class="municipio-button">San Carlos</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosTabasco')">Tabasco</button>
+  <div id="municipiosTabasco" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Centla</button>
+<button class="municipio-button">Paraíso</button>
+<button class="municipio-button">Comalcalco</button>
+<button class="municipio-button">Cárdenas</button>
+<button class="municipio-button">Frontera</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosTamaulipas')">Tamaulipas</button>
+  <div id="municipiosTamaulipas" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Tampico</button>
+<button class="municipio-button">Madero</button>
+<button class="municipio-button">Altamira</button>
+<button class="municipio-button">Matamoros</button>
+<button class="municipio-button">San Fernando</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosVeracruz')">Veracruz</button>
+  <div id="municipiosVeracruz" style="display: none; margin-left: 20px;">
+    <ul>
+      <li>Veracruz</li>
+      <li>Boca del Río</li>
+      <li>Coatzacoalcos</li>
+      <li>Alvarado</li>
+      <li>Tuxpan</li>
+<button class="municipio-button">Veracruz</button>
+<button class="municipio-button">Boca del Río</button>
+<button class="municipio-button">Coatzacoalcos</button>
+<button class="municipio-button">Alvarado</button>
+<button class="municipio-button">Tuxpan</button>
+    </ul>
+  </div>
+
+  <button class="sub-button" onclick="toggleMunicipios('municipiosYucatan')">Yucatán</button>
+  <div id="municipiosYucatan" style="display: none; margin-left: 20px;">
+    <ul>
+<button class="municipio-button">Progreso</button>
+<button class="municipio-button">Telchac</button>
+<button class="municipio-button">Sisal</button>
+<button class="municipio-button">Mérida</button>
+<button class="municipio-button">Conkal</button>
+    </ul>
+  </div>
+</div>
+
+<button class="sub-button" onclick="toggleSubPanel('resultados')">📊 Resultados del Decenio</button>
 <!-- Panel con los botones para cada resultado -->
 <div id="resultados" class="sub-panel" style="display:none;">
-<button class="sub-button" data-label="Resultado 1" onclick="mostrarTabla.call(this, 'tablaOceanoLimpio')">📊 Resultado 1</button>
-<button class="sub-button" data-label="Resultado 2" onclick="mostrarTabla.call(this, 'tablaOceanoSaludable')">📊 Resultado 2</button>
-<button class="sub-button" data-label="Resultado 3" onclick="mostrarTabla.call(this, 'tablaOceanoProductivo')">📊 Resultado 3</button>
-<button class="sub-button" data-label="Resultado 4" onclick="mostrarTabla.call(this, 'tablaOceanoPredecible')">📊 Resultado 4</button>
-<button class="sub-button" data-label="Resultado 5" onclick="mostrarTabla.call(this, 'tablaOceanoSeguro')">📊 Resultado 5</button>
-<button class="sub-button" data-label="Resultado 6" onclick="mostrarTabla.call(this, 'tablaOceanoAccesible')">📊 Resultado 6</button>
-<button class="sub-button" data-label="Resultado 7" onclick="mostrarTabla.call(this, 'tablaOceanoInspirador')">📊 Resultado 7</button>
+
+<button class="sub-button" data-label="1. Oceano Limpio" onclick="toggleTabla('tablaOceanoLimpio')">📊 1. Oceano Limpio</button>
+<button class="sub-button" data-label="2. Oceano Saludable" onclick="toggleTabla('tablaOceanoSaludable')">📊 2. Oceano Saludable</button>
+<button class="sub-button" data-label="3. Oceano Productivo" onclick="toggleTabla('tablaOceanoProductivo')">📊 3. Oceano Productivo</button>
+<button class="sub-button" data-label="4. Oceano Predecible" onclick="toggleTabla('tablaOceanoPredecible')">📊 4. Oceano Predecible</button>
+<button class="sub-button" data-label="5. Oceano Seguro" onclick="toggleTabla('tablaOceanoSeguro')">📊 5. Oceano Seguro</button>
+<button class="sub-button" data-label="6. Oceano Accesible" onclick="toggleTabla('tablaOceanoAccesible')">📊 6. Oceano Accesible</button>
+<button class="sub-button" data-label="7. Oceano Inspirador" onclick="toggleTabla('tablaOceanoInspirador')">📊 7. Oceano Inspirador</button>
 </div>
 
 <!-- Tabla Resultado 1 -->
 <div id="tablaOceanoLimpio" class="panel" style="display:none; margin-top: 20px;">
   <h3>🌊 Indicadores del Resultado 1: Océano Limpio</h3>
-  <!-- (Aquí va tu tabla ya construida, como la que ya tenías) -->
+<style>
+  table {
+    font-size: 12px; /* Reducir el tamaño de la fuente */
+    border-collapse: collapse; /* Eliminar el espacio entre bordes */
+    width: 80%; /* Reducir el ancho de la tabla */
+    margin: 0 auto; /* Centrar la tabla */
+  }
+
+  th, td {
+    padding: 5px; /* Reducir el padding dentro de las celdas */
+    text-align: center; /* Centrar el texto */
+    border: 1px solid #ddd; /* Bordes sutiles */
+  }
+
+  th {
+    background-color: #f2f2f2; /* Color de fondo para los encabezados */
+  }
+
+  tbody {
+    font-size: 11px; /* Tamaño más pequeño para las filas */
+  }
+</style>
         <table border="1" cellpadding="8" cellspacing="0" style="margin: 0 auto; background-color: white;">
           <thead style="background-color: #cce5ff;">
             <tr>
@@ -228,7 +440,7 @@
           </tbody>
         </table>
       </div>
-<!-- Resultado 4: Océano Seguro -->
+<!-- Resultado 4: Océano Predecible -->
 <div id="tablaOceanoPredecible" class="panel" style="display:none; margin-top: 20px;">
   <h3>🌊 Indicadores del Resultado 4: Océano Seguro</h3>
         <table border="1" cellpadding="8" cellspacing="0" style="margin: 0 auto; background-color: white;">
@@ -261,6 +473,107 @@
           </tbody>
         </table>
       </div>
+<!-- Resultado 5: Oceano Seguro -->
+<div id="tablaOceanoSeguro" class="panel" style="display:none; margin-top: 20px;">
+  <h3>🏝️ Indicadores del Resultado 5: Oceano Seguro</h3>
+  <table border="1" cellpadding="8" cellspacing="0" style="margin: 0 auto; background-color: white;">
+    <thead style="background-color: #cce5ff;">
+      <tr>
+        <th>Estado Costero</th>
+        <th>Visitas anuales (millones)</th>
+        <th>Impacto ambiental</th>
+        <th>Iniciativas de turismo sostenible</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Baja California</td><td>2.3</td><td>Medio</td><td>5</td></tr>
+      <tr><td>Baja California Sur</td><td>3.1</td><td>Alto</td><td>7</td></tr>
+      <tr><td>Sonora</td><td>1.2</td><td>Bajo</td><td>2</td></tr>
+      <tr><td>Sinaloa</td><td>2.0</td><td>Medio</td><td>4</td></tr>
+      <tr><td>Nayarit</td><td>1.5</td><td>Bajo</td><td>3</td></tr>
+      <tr><td>Jalisco</td><td>2.8</td><td>Medio</td><td>6</td></tr>
+      <tr><td>Colima</td><td>0.7</td><td>Bajo</td><td>2</td></tr>
+      <tr><td>Michoacán</td><td>1.0</td><td>Medio</td><td>3</td></tr>
+      <tr><td>Guerrero</td><td>2.6</td><td>Alto</td><td>4</td></tr>
+      <tr><td>Oaxaca</td><td>1.8</td><td>Bajo</td><td>3</td></tr>
+      <tr><td>Chiapas</td><td>1.0</td><td>Bajo</td><td>2</td></tr>
+      <tr><td>Tabasco</td><td>0.9</td><td>Medio</td><td>2</td></tr>
+      <tr><td>Campeche</td><td>1.1</td><td>Bajo</td><td>2</td></tr>
+      <tr><td>Yucatán</td><td>2.2</td><td>Medio</td><td>5</td></tr>
+      <tr><td>Quintana Roo</td><td>5.0</td><td>Alto</td><td>8</td></tr>
+      <tr><td>Tamaulipas</td><td>1.3</td><td>Medio</td><td>3</td></tr>
+      <tr><td>Veracruz</td><td>2.5</td><td>Medio</td><td>4</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Resultado 6: Oceano Accesible -->
+<div id="tablaOceanoAccesible" class="panel" style="display:none; margin-top: 20px;">
+  <h3>🌾 Indicadores del Resultado 6: Oceano Accesible</h3>
+  <table border="1" cellpadding="8" cellspacing="0" style="margin: 0 auto; background-color: white;">
+    <thead style="background-color: #cce5ff;">
+      <tr>
+        <th>Estado Costero</th>
+        <th>Pesca responsable (%)</th>
+        <th>Uso de fertilizantes (kg/ha)</th>
+        <th>Áreas de conservación pesquera</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Baja California</td><td>55</td><td>35</td><td>5</td></tr>
+      <tr><td>Baja California Sur</td><td>50</td><td>30</td><td>4</td></tr>
+      <tr><td>Sonora</td><td>60</td><td>40</td><td>6</td></tr>
+      <tr><td>Sinaloa</td><td>45</td><td>60</td><td>3</td></tr>
+      <tr><td>Nayarit</td><td>42</td><td>55</td><td>2</td></tr>
+      <tr><td>Jalisco</td><td>50</td><td>50</td><td>3</td></tr>
+      <tr><td>Colima</td><td>40</td><td>48</td><td>2</td></tr>
+      <tr><td>Michoacán</td><td>35</td><td>62</td><td>1</td></tr>
+      <tr><td>Guerrero</td><td>38</td><td>70</td><td>2</td></tr>
+      <tr><td>Oaxaca</td><td>30</td><td>60</td><td>2</td></tr>
+      <tr><td>Chiapas</td><td>40</td><td>50</td><td>3</td></tr>
+      <tr><td>Tabasco</td><td>45</td><td>65</td><td>2</td></tr>
+      <tr><td>Campeche</td><td>48</td><td>55</td><td>3</td></tr>
+      <tr><td>Yucatán</td><td>52</td><td>50</td><td>4</td></tr>
+      <tr><td>Quintana Roo</td><td>46</td><td>60</td><td>3</td></tr>
+      <tr><td>Tamaulipas</td><td>41</td><td>58</td><td>2</td></tr>
+      <tr><td>Veracruz</td><td>44</td><td>53</td><td>3</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Resultado 7: Oceano Inspirador y Estimulante -->
+<div id="tablaOceanoInspirador" class="panel" style="display:none; margin-top: 20px;">
+  <h3>🔬 Indicadores del Resultado 7: Oceano Inspirador y Estimulante</h3>
+  <table border="1" cellpadding="8" cellspacing="0" style="margin: 0 auto; background-color: white;">
+    <thead style="background-color: #cce5ff;">
+      <tr>
+        <th>Estado Costero</th>
+        <th>Proyectos de investigación</th>
+        <th>Instituciones de investigación</th>
+        <th>Innovaciones tecnológicas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Baja California</td><td>6</td><td>3</td><td>4</td></tr>
+      <tr><td>Baja California Sur</td><td>5</td><td>2</td><td>3</td></tr>
+      <tr><td>Sonora</td><td>4</td><td>3</td><td>2</td></tr>
+      <tr><td>Sinaloa</td><td>3</td><td>2</td><td>2</td></tr>
+      <tr><td>Nayarit</td><td>2</td><td>1</td><td>1</td></tr>
+      <tr><td>Jalisco</td><td>5</td><td>4</td><td>3</td></tr>
+      <tr><td>Colima</td><td>2</td><td>2</td><td>1</td></tr>
+      <tr><td>Michoacán</td><td>2</td><td>1</td><td>1</td></tr>
+      <tr><td>Guerrero</td><td>3</td><td>2</td><td>1</td></tr>
+      <tr><td>Oaxaca</td><td>3</td><td>2</td><td>1</td></tr>
+      <tr><td>Chiapas</td><td>3</td><td>2</td><td>2</td></tr>
+      <tr><td>Tabasco</td><td>3</td><td>2</td><td>2</td></tr>
+      <tr><td>Campeche</td><td>3</td><td>1</td><td>1</td></tr>
+      <tr><td>Yucatán</td><td>4</td><td>3</td><td>2</td></tr>
+      <tr><td>Quintana Roo</td><td>5</td><td>3</td><td>3</td></tr>
+      <tr><td>Tamaulipas</td><td>2</td><td>2</td><td>1</td></tr>
+      <tr><td>Veracruz</td><td>4</td><td>4</td><td>2</td></tr>
+    </tbody>
+  </table>
+</div>
 </div>
     <!-- Otros botones de programa -->
     <button class="accordion">📡 IODE</button>
@@ -308,29 +621,30 @@
     Sitio de muestra desarrollado por Carlos R. Torres Navarrete · COI-UNESCO México
   </footer>
 
-  <script>
-    var acc = document.getElementsByClassName("accordion");
+<!-- ========== INICIO DE SCRIPTS PERSONALIZADOS ========== -->
+<script>
+  // 1. Script para el acordeón
+  document.addEventListener("DOMContentLoaded", function () {
+    const acc = document.getElementsByClassName("accordion");
     for (let i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
+      acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
       });
     }
+  });
+</script>
 
-    function toggleSubPanel(id) {
-      var sub = document.getElementById(id);
-      if (sub.style.display === "block") {
-        sub.style.display = "none";
-      } else {
-        sub.style.display = "block";
-      }
-    }
-
+<script>
+  // 2. Mostrar/ocultar subpaneles
+  function toggleSubPanel(id) {
+    const sub = document.getElementById(id);
+    sub.style.display = (sub.style.display === "block") ? "none" : "block";
+  }
+</script>
+<script>
+  // 3. Mostrar tabla correspondiente y ocultar las demás
   function mostrarTabla(tablaId) {
     const idsTablas = [
       "tablaOceanoLimpio",
@@ -342,33 +656,76 @@
       "tablaOceanoInspirador"
     ];
 
-    // Oculta todas las tablas
+    // Ocultar todas las tablas
     idsTablas.forEach(id => {
       const tabla = document.getElementById(id);
       if (tabla) tabla.style.display = "none";
     });
 
-    // Muestra la tabla seleccionada
+    // Mostrar tabla seleccionada
     const tablaMostrar = document.getElementById(tablaId);
     if (tablaMostrar) {
       tablaMostrar.style.display = "block";
       tablaMostrar.scrollIntoView({ behavior: "smooth" });
     }
 
-    // Reset todos los botones
+    // Resetear botones
     const botones = document.querySelectorAll('.sub-button');
     botones.forEach(btn => {
       btn.classList.remove('active');
       const textoOriginal = btn.getAttribute('data-label');
       if (textoOriginal) btn.innerHTML = `📊 ${textoOriginal}`;
     });
-
-    // Activar botón actual
-    const botonActivo = event.currentTarget;
-    botonActivo.classList.add('active');
-    const texto = botonActivo.getAttribute('data-label');
-    botonActivo.innerHTML = `✅ ${texto}`;
   }
-  </script>
+</script>
+
+<script>
+  // 4. Mostrar/ocultar municipios por divId
+  function mostrarMunicipios(divId) {
+    const div = document.getElementById(divId);
+    div.style.display = (div.style.display === "block") ? "none" : "block";
+  }
+</script>
+
+<script>
+  // 5. Alternativa: Mostrar/ocultar municipios por ID (más genérico)
+  function toggleMunicipios(idMunicipio) {
+    const panel = document.getElementById(idMunicipio);
+    panel.style.display = (panel.style.display === "none" || panel.style.display === "") ? "block" : "none";
+  }
+</script>
+
+<script>
+function toggleTabla(tablaId) {
+  // Obtener la tabla por su ID
+  const tabla = document.getElementById(tablaId);
+  
+  // Verificar si la tabla está actualmente visible o no
+  if (tabla.style.display === "none" || tabla.style.display === "") {
+    // Si está oculta, mostrarla
+    tabla.style.display = "block";
+    tabla.scrollIntoView({ behavior: "smooth" }); // Desplazarse suavemente a la tabla
+  } else {
+    // Si está visible, ocultarla
+    tabla.style.display = "none";
+  }
+
+  // Opcionalmente, agregar clase "active" al botón correspondiente
+  const botones = document.querySelectorAll('.sub-button');
+  botones.forEach(btn => {
+    btn.classList.remove('active');
+    const textoOriginal = btn.getAttribute('data-label');
+    if (textoOriginal) btn.innerHTML = `📊 ${textoOriginal}`;
+  });
+
+  const boton = document.querySelector(`[data-label="${tablaId.split('tabla')[1]}"]`);
+  if (boton) {
+    boton.classList.add('active');
+    boton.innerHTML = `✔️ ${boton.getAttribute('data-label')}`;
+  }
+}
+</script>
+
+<!-- ========== FIN DE SCRIPTS PERSONALIZADOS ========== -->
 </body>
 </html>
